@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "adopted-paper-data",
+  "source_commit": "1527a92bf98eb43fdc1dc3b7fba9c8f3515aff68",
+  "files": {
+    "velocity_pgd.json": {
+      "sha256": "4733192c8b0792ab6f9d64542bdeb8ec33666184431ab2fdd3251c618b08de14",
+      "source": "outputs/pgd_recalculation/candidates_01/velocity_pgd.json"
+    },
+    "refinement_pgd.json": {
+      "sha256": "b3140f213f00f87d08a4898965c6e02a58ae42611fe8e92a95808649506f5afc",
+      "source": "outputs/pgd_recalculation/candidates_01/refinement_pgd.json"
+    },
+    "chi_refinement.json": {
+      "sha256": "d19e61b3bb236d1709c1c0746cd87450d0cd94cf9c23a35f8d3a628c4c9727d1",
+      "source": "outputs/room_2d_fv_chi_refinement/chi_refinement.json"
+    },
+    "characteristics.json": {
+      "sha256": "285d6bbabfa459c6c02927c4f64f16e28924497e2dc8f304055ae35dcd3d2e8f",
+      "source": "outputs/results/room_2d_characteristics_horizon.json"
+    },
+    "apparent_feasibility.json": {
+      "sha256": "62aa6e381ff5ec655adbd8020a014d0dcb59c2162da304dda447f9b45ff152ad",
+      "source": "outputs/results/room_2d_fv_apparent_feasibility.json"
+    }
+  },
+  "reference_pdf_sha256": {
+    "geometry": "fedc24b3d1941077444533c31f703aaba0f14bc8cab0f4c639c1c16456967190",
+    "gramian_eigenvalues": "81768a9f61878366b4392edbedfb03b94e8b7e486c296294db01de2934446a7e",
+    "velocity_allocations": "85d583fb71ffd06e41e2106843649494942f82bd593d49d699ddb6a5c29be9bb",
+    "mesh_refinement": "cf076c2e6b9a29421fcc2bd47c250296a7e2bcc4c81918df93070bd728fee3c3"
+  },
+  "note": "Adopted numerical results. Positive discrete eigenvalues and separation diagnostics do not certify continuum properties."
+}

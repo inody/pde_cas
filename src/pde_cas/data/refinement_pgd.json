@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "configuration": {
+    "schema_version": 1,
+    "geometry": {
+      "name": "D",
+      "length_x": 3.0,
+      "length_y": 2.0,
+      "actuator_centers": [
+        [
+          0.34,
+          0.26
+        ],
+        [
+          1.86,
+          0.24
+        ],
+        [
+          2.66,
+          0.26
+        ],
+        [
+          0.36,
+          1.74
+        ],
+        [
+          1.14,
+          1.76
+        ],
+        [
+          2.64,
+          1.74
+        ]
+      ],
+      "target_centers": [
+        [
+          0.7,
+          0.7
+        ],
+        [
+          2.3,
+          1.25
+        ],
+        [
+          2.4,
+          0.65
+        ]
+      ],
+      "radius": 0.15,
+      "bump_power": 3,
+      "normalization": "cell-average discrete mass L2"
+    },
+    "grid": {
+      "num_x": 767,
+      "num_y": 511,
+      "hx": 0.003911342894393742,
+      "hy": 0.003913894324853229,
+      "h": 0.003913894324853229
+    },
+    "physics": {
+      "diffusivity": 0.03,
+      "velocity_scale": 0.2,
+      "damping": 0.02
+    },
+    "time": {
+      "horizon": 6.0,
+      "base_num_time_points": 401,
+      "num_time_points": 801,
+      "high_time_resolution": true,
+      "quadrature": "composite Simpson",
+      "method": "mass-adjoint exponential action",
+      "chunk_size": 16
+    },
+    "profile_quadrature_order": 6,
+    "optimizer": "manuscript Algorithm 1, uniform-start PGD; no polishing",
+    "software": {
+      "numpy": "2.5.1",
+      "scipy": "1.18.0",
+      "python": "3.13.11"
+    },
+    "legacy_propagation_dependency_sha256": "2aa6d6fd8d670fe2abd250acad8c7e74b4f17a94db2bd9655d6626d0f98a2b04",
+    "pgd_source_sha256": "579b4504dfd041fc77605ce5b81530c8878d72f47976030e3614950d815be2d6"
+  },
+  "rows": [
+    {
+      "num_x": 47,
+      "num_y": 31,
+      "h": 0.06451612903225806,
+      "is_reference": false,
+      "scores": {
+        "vcs": {
+          "allocation": [
+            0.0,
+            0.6666718644569471,
+            0.0,
+            0.3333281355430528,
+            0.0,
+            0.0
+          ],
+          "objective_value": 24.258852186675867,
+          "success": true,
+          "relative_kkt_residual": 1.665334536937365e-13,
+          "gradient_mapping_norm_2": 7.062276577288736e-13,
+          "iterations": 79
+        },
+        "aecs": {
+          "allocation": [
+            0.0,
+            0.1916456402459237,
+            0.43282549452603786,
+            0.3755288652280386,
+            0.0,
+            0.0
+          ],
+          "objective_value": 15990.263886184277,
+          "success": true,
+          "relative_kkt_residual": 3.3239520466895794e-13,
+          "gradient_mapping_norm_2": 6.68174356990826e-09,
+          "iterations": 94
+        }
+      },
+      "to_reference": {
+        "response_l2_relative": 0.12615504980151365,
+        "gramian_fro_relative": 0.6917856294439916,
+        "vcs_allocation_linf": 2.2582897729050977e-06,
+        "vcs_objective_relative": 0.01903429256009984,
+        "aecs_allocation_linf": 0.06800921372656882,
+        "aecs_objective_relative": 0.16648773148762827
+      }
+    },
+    {
+      "num_x": 95,
+      "num_y": 63,
+      "h": 0.031746031746031744,
+      "is_reference": false,
+      "scores": {
+        "vcs": {
+          "allocation": [
+            0.0,
+            0.6666705560518733,
+            0.0,
+            0.33332944394812664,
+            0.0,
+            0.0
+          ],
+          "objective_value": 24.665326640445958,
+          "success": true,
+          "relative_kkt_residual": 2.180478020363173e-13,
+          "gradient_mapping_norm_2": 9.247845114785776e-13,
+          "iterations": 77
+        },
+        "aecs": {
+          "allocation": [
+            0.0,
+            0.22370383765908952,
+            0.3939195402330938,
+            0.38237662210781664,
+            0.0,
+            0.0
+          ],
+          "objective_value": 18558.393831363574,
+          "success": true,
+          "relative_kkt_residual": 3.459907496770305e-13,
+          "gradient_mapping_norm_2": 8.227589684605594e-09,
+          "iterations": 103
+        }
+      },
+      "to_reference": {
+        "response_l2_relative": 0.03739710461350617,
+        "gramian_fro_relative": 0.22206695963875656,
+        "vcs_allocation_linf": 9.498846990640963e-07,
+        "vcs_objective_relative": 0.0025975091117126864,
+        "aecs_allocation_linf": 0.02910325943362474,
+        "aecs_objective_relative": 0.03262078397024447
+      }
+    },
+    {
+      "num_x": 191,
+      "num_y": 127,
+      "h": 0.015748031496062992,
+      "is_reference": false,
+      "scores": {
+        "vcs": {
+          "allocation": [
+            0.0,
+            0.6666699901616504,
+            0.0,
+            0.3333300098383497,
+            0.0,
+            0.0
+          ],
+          "objective_value": 24.735832887484285,
+          "success": true,
+          "relative_kkt_residual": 2.0753769073656727e-13,
+          "gradient_mapping_norm_2": 8.801938883528374e-13,
+          "iterations": 71
+        },
+        "aecs": {
+          "allocation": [
+            0.0,
+            0.23743840067778343,
+            0.3767338747730647,
+            0.38582772454915176,
+            0.0,
+            0.0
+          ],
+          "objective_value": 19127.181330931748,
+          "success": true,
+          "relative_kkt_residual": 3.1154665096301545e-13,
+          "gradient_mapping_norm_2": 7.572427325813262e-09,
+          "iterations": 105
+        }
+      },
+      "to_reference": {
+        "response_l2_relative": 0.01377866743129237,
+        "gramian_fro_relative": 0.07935625410430054,
+        "vcs_allocation_linf": 3.8399447610526494e-07,
+        "vcs_objective_relative": 0.00025358252166944286,
+        "aecs_allocation_linf": 0.011917593973595653,
+        "aecs_objective_relative": 0.002972032552441576
+      }
+    },
+    {
+      "num_x": 383,
+      "num_y": 255,
+      "h": 0.00784313725490196,
+      "is_reference": false,
+      "scores": {
+        "vcs": {
+          "allocation": [
+            0.0,
+            0.6666697303131273,
+            0.0,
+            0.3333302696868728,
+            0.0,
+            0.0
+          ],
+          "objective_value": 24.737243044789018,
+          "success": true,
+          "relative_kkt_residual": 1.74527059471034e-13,
+          "gradient_mapping_norm_2": 7.404556035152683e-13,
+          "iterations": 77
+        },
+        "aecs": {
+          "allocation": [
+            0.0,
+            0.24375341092024472,
+            0.3686981595754684,
+            0.387548429504287,
+            0.0,
+            0.0
+          ],
+          "objective_value": 19200.76948401242,
+          "success": true,
+          "relative_kkt_residual": 3.8917234415973005e-13,
+          "gradient_mapping_norm_2": 9.984730252473287e-09,
+          "iterations": 100
+        }
+      },
+      "to_reference": {
+        "response_l2_relative": 0.004520745686686614,
+        "gramian_fro_relative": 0.02417721639911115,
+        "vcs_allocation_linf": 1.2414595296217357e-07,
+        "vcs_objective_relative": 0.0003106056630527951,
+        "aecs_allocation_linf": 0.003881878775999381,
+        "aecs_objective_relative": 0.0008638408794473507
+      }
+    },
+    {
+      "num_x": 767,
+      "num_y": 511,
+      "h": 0.003913894324853229,
+      "is_reference": true,
+      "scores": {
+        "vcs": {
+          "allocation": [
+            0.0,
+            0.6666696061671743,
+            0.0,
+            0.3333303938328257,
+            0.0,
+            0.0
+          ],
+          "objective_value": 24.72956190281719,
+          "success": true,
+          "relative_kkt_residual": 1.6964207816268557e-13,
+          "gradient_mapping_norm_2": 7.194164331019648e-13,
+          "iterations": 77
+        },
+        "aecs": {
+          "allocation": [
+            0.0,
+            0.24677649010702435,
+            0.36481628079946904,
+            0.3884072290935066,
+            0.0,
+            0.0
+          ],
+          "objective_value": 19184.197390067493,
+          "success": true,
+          "relative_kkt_residual": 3.692176739733038e-13,
+          "gradient_mapping_norm_2": 9.774474582636643e-09,
+          "iterations": 99
+        }
+      },
+      "to_reference": {
+        "response_l2_relative": 0.0,
+        "gramian_fro_relative": 0.0,
+        "vcs_allocation_linf": 0.0,
+        "vcs_objective_relative": 0.0,
+        "aecs_allocation_linf": 0.0,
+        "aecs_objective_relative": 0.0
+      }
+    }
+  ],
+  "reference_grid": [
+    767,
+    511
+  ],
+  "observed_rates_all_four_meshes": {
+    "response_l2_relative": 1.5642977518425545,
+    "gramian_fro_relative": 1.5791478162492556,
+    "vcs_allocation_linf": 1.3678330089291935,
+    "aecs_allocation_linf": 1.3499339395336138
+  },
+  "manuscript_adoption": false
+}

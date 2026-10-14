@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "method": "cell-centered finite volume; stream-function face flux; donor-cell upwind",
+  "diffusivity": 0.0,
+  "damping": 0.02,
+  "velocity_scale": 0.15,
+  "horizon": 5.0,
+  "num_time_points": 501,
+  "continuum_statement": "Targets c1 and c2 are unreachable through T=5; the continuum Gramian has rank at most one.",
+  "rows": [
+    {
+      "num_x": 47,
+      "num_y": 31,
+      "state_dimension": 1457,
+      "max_unreachable_response_l2": 0.0008699738251384027,
+      "uniform_gramian_eigenvalues": [
+        3.715332791663464e-08,
+        5.454960465058703e-08,
+        0.0022329719811256107
+      ],
+      "practical_pd_threshold": 1e-14,
+      "runtime_seconds": 0.2529192919610068
+    },
+    {
+      "num_x": 95,
+      "num_y": 63,
+      "state_dimension": 5985,
+      "max_unreachable_response_l2": 3.5690511967635684e-05,
+      "uniform_gramian_eigenvalues": [
+        2.3796046223993404e-11,
+        1.2774511419383554e-10,
+        0.0026498536184884373
+      ],
+      "practical_pd_threshold": 1e-14,
+      "runtime_seconds": 0.9044130420079455
+    },
+    {
+      "num_x": 191,
+      "num_y": 127,
+      "state_dimension": 24257,
+      "max_unreachable_response_l2": 1.9215198128772166e-07,
+      "uniform_gramian_eigenvalues": [
+        1.26424207342203e-16,
+        4.651369851713288e-15,
+        0.0026872631754655896
+      ],
+      "practical_pd_threshold": 1e-14,
+      "runtime_seconds": 3.9538367080385797
+    },
+    {
+      "num_x": 383,
+      "num_y": 255,
+      "state_dimension": 97665,
+      "max_unreachable_response_l2": 4.728551653938967e-11,
+      "uniform_gramian_eigenvalues": [
+        -4.765043602168396e-23,
+        3.57154423897664e-25,
+        0.0023653217532796735
+      ],
+      "practical_pd_threshold": 1e-14,
+      "runtime_seconds": 19.543596624978818
+    }
+  ]
+}

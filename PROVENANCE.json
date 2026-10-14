@@ -1,0 +1,64 @@
+{
+  "source_commit": "1527a92bf98eb43fdc1dc3b7fba9c8f3515aff68",
+  "copied_kernels": {
+    "src/pde_cas/pgd.py": {
+      "source": "src/controllability_score/manuscript_pgd.py",
+      "source_sha256": "579b4504dfd041fc77605ce5b81530c8878d72f47976030e3614950d815be2d6",
+      "change": "Computation unchanged; import paths updated where needed."
+    },
+    "src/pde_cas/grid.py": {
+      "source": "src/controllability_score/room_2d_fv_grid.py",
+      "source_sha256": "455eaa4c4bcf0407a370bffa147b2d29fe28c130820e4aa4abf23aad099523c9",
+      "change": "Computation unchanged; import paths updated where needed."
+    },
+    "src/pde_cas/profiles.py": {
+      "source": "src/controllability_score/room_2d_fv_profiles.py",
+      "source_sha256": "0687e254f9c48a2134910883d212610fa28a8d04f4d7e911050746256381dd3e",
+      "change": "Computation unchanged; import paths updated where needed."
+    },
+    "src/pde_cas/operator.py": {
+      "source": "src/controllability_score/room_2d_fv_operator.py",
+      "source_sha256": "0bfcd4e7e429ee79bb3ca519a08b20204e6aeb7f856c5ef286b5e6f9f51df2fb",
+      "change": "Computation unchanged; import paths updated where needed."
+    },
+    "src/pde_cas/response.py": {
+      "source": "src/controllability_score/room_2d_fv_response.py",
+      "source_sha256": "f3cc6954681150e01b50c8d95cf65922d640e434580327fe628b83ed22efeb0c",
+      "change": "Computation unchanged; import paths updated where needed."
+    },
+    "src/pde_cas/continuum.py": {
+      "source": "src/controllability_score/room_2d_continuum.py",
+      "source_sha256": "1727338b43feeeeee538f4195fd25edea7e5e6c19d4dbd382d891070dea60eb2",
+      "change": "Computation unchanged; import paths updated where needed."
+    }
+  },
+  "extracted_sources": {
+    "src/controllability_score/room_2d_fv_benchmark.py": "1a990fb71ac57d43883c74904eda74e0897153afc78230b7d344a4333a53969f",
+    "src/controllability_score/plot_style.py": "741f20175d440254b6332f578cc4e8b5073fe21a6f9eba0c88a7eb86808a2d0b",
+    "scripts/plot_room_2d_final_candidates.py": "52de56fe2fe4472787f3f47f8336dea005fff41b744e82ec7bbd73283fb67061",
+    "src/controllability_score/objectives.py": "3d4efaa4d5ef1c767a5bcc35f2d12385fd1f4ff634478faffeb4e86064ee8849"
+  },
+  "data": {
+    "velocity_pgd.json": {
+      "sha256": "4733192c8b0792ab6f9d64542bdeb8ec33666184431ab2fdd3251c618b08de14",
+      "source": "outputs/pgd_recalculation/candidates_01/velocity_pgd.json"
+    },
+    "refinement_pgd.json": {
+      "sha256": "b3140f213f00f87d08a4898965c6e02a58ae42611fe8e92a95808649506f5afc",
+      "source": "outputs/pgd_recalculation/candidates_01/refinement_pgd.json"
+    },
+    "chi_refinement.json": {
+      "sha256": "d19e61b3bb236d1709c1c0746cd87450d0cd94cf9c23a35f8d3a628c4c9727d1",
+      "source": "outputs/room_2d_fv_chi_refinement/chi_refinement.json"
+    },
+    "characteristics.json": {
+      "sha256": "285d6bbabfa459c6c02927c4f64f16e28924497e2dc8f304055ae35dcd3d2e8f",
+      "source": "outputs/results/room_2d_characteristics_horizon.json"
+    },
+    "apparent_feasibility.json": {
+      "sha256": "62aa6e381ff5ec655adbd8020a014d0dcb59c2162da304dda447f9b45ff152ad",
+      "source": "outputs/results/room_2d_fv_apparent_feasibility.json"
+    }
+  },
+  "scope": "Numerical kernels and plotting functions extracted from the development repository. Private execution records, third-party literature, and manuscript diffs are excluded."
+}

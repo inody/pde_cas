@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "method": "backward RK4 characteristics with target-support polar quadrature",
+  "horizon": 12.0,
+  "num_time_points": 1201,
+  "reference": {
+    "substeps": 10,
+    "radial_order": 24,
+    "angular_order": 144
+  },
+  "check": {
+    "substeps": 5,
+    "radial_order": 16,
+    "angular_order": 96
+  },
+  "maximum_response_difference": 4.627120502045945e-06,
+  "uniform_gramian_eigenvalues_at_T12_check": [
+    1.221613521739399e-10,
+    3.295029028021203e-08,
+    0.0015226284570835572
+  ],
+  "maximum_T12_eigenvalue_difference": 4.855435463413382e-10,
+  "response_onset_tolerance": 1e-12,
+  "response_onsets": [
+    8.35,
+    8.11,
+    2.64
+  ],
+  "numerical_positive_definiteness_onset": 8.74,
+  "uniform_gramian_eigenvalues_at_T5": [
+    0.0,
+    0.0,
+    0.001454112941112685
+  ],
+  "uniform_gramian_eigenvalues_at_T12": [
+    1.221918219570573e-10,
+    3.29550580775128e-08,
+    0.001522627971540011
+  ]
+}
