@@ -1,8 +1,6 @@
-# pde_cas
+# Controllability Allocation Scores for Linear Infinite-Dimensional Systems
 
-Reproducible numerical examples for *Controllability Allocation Scores for Linear Infinite-Dimensional Systems*.
-
-This repository provides the numerical code and adopted data used to regenerate the four figures in the paper. It also provides a separate command for recomputing the reported finite-volume responses and allocation scores.
+This repository provides the numerical code and adopted data for computing and reproducing controllability allocation scores (CASs) for linear infinite-dimensional systems. It covers the volumetric CAS (V-CAS) and average-energy CAS (AE-CAS) examples reported in the paper, regenerates its four figures, and provides a separate command for recomputing the finite-volume responses and allocation scores.
 
 ## Reproduce Figures 1–4
 
@@ -92,3 +90,7 @@ The internal `vcs`/`aecs` keys are retained for compatibility with the saved res
 ## License
 
 The code and bundled data in this repository are available under the [BSD 3-Clause License](LICENSE).
+
+## Paper
+
+Daisuke Inoue and Kazuhiro Sato, “[Controllability Allocation Scores for Linear Infinite-Dimensional Systems](https://arxiv.org/abs/2610.28205),” arXiv:2610.28205, 2026.
