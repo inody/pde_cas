@@ -94,3 +94,15 @@ The code and bundled data in this repository are available under the [BSD 3-Clau
 ## Paper
 
 Daisuke Inoue and Kazuhiro Sato, “[Controllability Allocation Scores for Linear Infinite-Dimensional Systems](https://arxiv.org/abs/2610.28205),” arXiv:2610.28205, 2026.
+
+```bibtex
+@misc{inoue2026controllabilityallocationscoreslinear,
+  title         = {Controllability Allocation Scores for Linear Infinite-Dimensional Systems},
+  author        = {Daisuke Inoue and Kazuhiro Sato},
+  year          = {2026},
+  eprint        = {2610.28205},
+  archivePrefix = {arXiv},
+  primaryClass  = {math.OC},
+  url           = {https://arxiv.org/abs/2610.28205}
+}
+```
