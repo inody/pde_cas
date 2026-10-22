@@ -52,7 +52,7 @@ def refinement_with_feasibility_figure(refinement, chi_report):
     )
     feasibility_axis.set(
         ylabel=r"$\lambda_{\min}(\Gamma_{T,h})$",
-        title="(b) Target feasibility",
+        title="(b) Target controllability",
         ylim=(
             min(0.0, float(eigenvalues.min()) * 1.15),
             float(eigenvalues.max()) * 1.15 if eigenvalues.max() > 0 else 1,

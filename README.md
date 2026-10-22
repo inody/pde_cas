@@ -2,7 +2,7 @@
 
 Reproducible numerical examples for *Controllability Allocation Scores for Linear Infinite-Dimensional Systems*.
 
-**Private preparation version. No open-source license has been selected yet. Do not publish or redistribute this repository until the authors have approved its release and license.**
+This repository provides the numerical code and adopted data used to regenerate the four figures in the paper. It also provides a separate command for recomputing the reported finite-volume responses and allocation scores.
 
 ## Reproduce Figures 1–4
 
@@ -27,11 +27,11 @@ uv creates the Python environment using the pinned dependencies in `uv.lock`. Th
 | Paper figure | Output stem |
 |---|---|
 | Figure 1: actuator and target geometry | `geometry` |
-| Figure 2: apparent feasibility | `gramian_eigenvalues` |
-| Figure 3: velocity-dependent allocations | `velocity_allocations` |
-| Figure 4: refinement, feasibility, and separation | `mesh_refinement` |
+| Figure 2: velocity-dependent allocations | `velocity_allocations` |
+| Figure 3: horizon dependence and apparent target controllability | `gramian_eigenvalues` |
+| Figure 4: refinement, target controllability, and separation | `mesh_refinement` |
 
-This is a **figure-regeneration command**, not a full PDE/optimization rerun. It uses the bundled, adopted FV and PGD results. The short characteristic history in Figure 2 is recomputed using the recorded settings and checked against the saved endpoints at T=5 and T=12. All five input files are hash-checked, and the allocation data must identify the adopted uniform-start PGD solver. There is no fallback to historical optimization results.
+This is a **figure-regeneration command**, not a full PDE/optimization rerun. It uses the bundled, adopted FV and PGD results. The short characteristic history in Figure 3 is recomputed using the recorded settings and checked against the saved endpoints at T=5 and T=12. All five input files are hash-checked, and the allocation data must identify the adopted uniform-start PGD solver. There is no fallback to historical optimization results.
 
 `reproduction.json` records output hashes and comparison with the adopted PDF hashes. Exact PDF bytes also depend on TeX, fonts, and the operating system; byte equality is a stricter test than numerical or visual agreement.
 
@@ -42,7 +42,7 @@ uv run --locked pde-cas compute --output outputs/recomputed
 uv run --locked pde-cas figures --data-dir outputs/recomputed/data --output outputs/recomputed/figures
 ```
 
-The computation can be expensive: it covers the four FV meshes in Figure 2, the 47 plotted velocity samples in Figure 3, and the five refinement meshes in Figure 4, including 767×511 cells. Figure 3 uses the adopted velocity locations; this command does **not** repeat the historical adaptive point-selection process or its 22 midpoint probes. Table 1 is also outside this command's scope.
+The computation can be expensive: it covers the 47 plotted velocity samples in Figure 2, the four FV meshes in Figure 3, and the five refinement meshes in Figure 4, including 767×511 cells. Figure 2 uses the adopted velocity locations; this command does **not** repeat the historical adaptive point-selection process or its 22 midpoint probes. Table 1 is also outside this command's scope.
 
 The FV generator, mass-normalized profiles, face-integrated fluxes, exponential-action propagation, composite Simpson quadrature, and PGD arithmetic follow the adopted implementation. PGD uses a uniform initial allocation, with accepted-step Euclidean mapping tolerances of 1e-12 for V-CAS and 1e-8 for AE-CAS. No polishing, regularization, clipping, or alternative solver is used.
 
@@ -70,6 +70,12 @@ uv run --locked pytest
 
 Tests cover the numerical kernels, input tampering and solver identification, checkpoint/resume behavior, failure handling, plotting arrays, and panel dimensions. Numerical positive definiteness and positive restricted-separation diagnostics are not certificates for the corresponding continuum properties.
 
+## Release integrity
+
+This distribution is produced from a maintained source package through an explicit file allowlist. The release process runs the tests, regenerates all four paper figures, and verifies their hashes before updating this repository.
+
+`DISTRIBUTION.json`, when present, records the exported file hashes, source identity, and validation results.
+
 ## Repository layout
 
 - `src/pde_cas/`: FV, characteristics, PGD, plotting, and command-line code.
@@ -77,8 +83,12 @@ Tests cover the numerical kernels, input tampering and solver identification, ch
 - `tests/`: kernel and reproduction-path checks.
 - `PROVENANCE.json`: source development commit, extracted source files, and hashes.
 
-See [VALIDATION.md](VALIDATION.md) for the checks performed on this preparation version and their limits.
+See [VALIDATION.md](VALIDATION.md) for the checks performed on this distribution and their limits.
 
-The development repository retains the historical heat/Gaussian experiments, alternative solvers, failed pilots, and audit history. This repository excludes those legacy workflows, private execution records, third-party literature, annotated manuscripts, and manuscript-diff archives.
+Historical exploratory workflows, execution records, third-party literature, annotated manuscripts, and manuscript-diff archives are intentionally excluded from this repository.
 
 The internal `vcs`/`aecs` keys are retained for compatibility with the saved results. Figure labels use V-CAS/AE-CAS; CAS denotes an optimizing allocation, not an objective value.
+
+## License
+
+The code and bundled data in this repository are available under the [BSD 3-Clause License](LICENSE).

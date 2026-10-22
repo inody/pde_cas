@@ -60,5 +60,5 @@
       "source": "outputs/results/room_2d_fv_apparent_feasibility.json"
     }
   },
-  "scope": "Numerical kernels and plotting functions extracted from the development repository. Private execution records, third-party literature, and manuscript diffs are excluded."
+  "scope": "Numerical kernels and plotting functions extracted from the development source. Execution records, third-party literature, and manuscript diffs are excluded."
 }

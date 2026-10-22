@@ -28,7 +28,7 @@
     "geometry": "fedc24b3d1941077444533c31f703aaba0f14bc8cab0f4c639c1c16456967190",
     "gramian_eigenvalues": "81768a9f61878366b4392edbedfb03b94e8b7e486c296294db01de2934446a7e",
     "velocity_allocations": "85d583fb71ffd06e41e2106843649494942f82bd593d49d699ddb6a5c29be9bb",
-    "mesh_refinement": "cf076c2e6b9a29421fcc2bd47c250296a7e2bcc4c81918df93070bd728fee3c3"
+    "mesh_refinement": "c75e8f913375f4f632894b4325d4408d865acdda60407dfedf367739a75aecbf"
   },
   "note": "Adopted numerical results. Positive discrete eigenvalues and separation diagnostics do not certify continuum properties."
 }

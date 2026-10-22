@@ -117,6 +117,7 @@ def test_refinement_triptych_preserves_data_and_square_panels():
     fig = refinement_with_feasibility_figure(ref, chi)
     try:
         assert len(fig.axes) == 3
+        assert fig.axes[1].get_title() == "(b) Target controllability"
         np.testing.assert_array_equal(
             fig.axes[1].lines[0].get_ydata(), aggregate_gramian_minimum_eigenvalues(chi)
         )

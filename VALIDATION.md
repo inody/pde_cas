@@ -1,4 +1,4 @@
-# Validation of the private preparation version
+# Validation of the distribution package
 
 ## Completed checks
 
@@ -30,4 +30,3 @@ Python 3.13.11, NumPy 2.5.1, SciPy 1.18.0, Matplotlib 3.11.0, and TeX Live 2026 
 - The fresh computation command reproduces the plotted velocity locations, not the historical adaptive sample-selection decisions. Table 1 and the 22 midpoint probes are not included in its scope.
 - Byte-identical PDFs on the tested setup do not guarantee identical bytes with another TeX/font installation.
 - Discrete feasibility and separation diagnostics provide numerical evidence, not continuum certification.
-- Keep this preparation version private. An open-source license and public release require author approval. No license has been assumed.
